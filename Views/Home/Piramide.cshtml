@@ -1,13 +1,46 @@
 ﻿@model int
+<style>
+    .espacio{
+        width:50px;
+        height:50px;
+        background:white;
+    
+    }
+</style>
 
+ @{
+           var a=0;
+           var b=Model-1; 
+        }
 
 
     @for (int i = 0 ; i < Model ; i++)
     {
-         <img  src="~/images/bloque.webp" alt="#">
+       
+        @for(int m=0;m<b-a;m++){
+            <img class="espacio">
+
+        }
+        a++;
+        for(int s=0;s<a;s++){
+            <img  src="~/images/bloque.webp" alt="#">
+
+        }
+        <div></div>
+        
+
+         
+         
     }
 
     <br/>
+
+
+           
+
+
+
+
 
 
            
